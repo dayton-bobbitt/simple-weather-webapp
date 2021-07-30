@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Weather Webapp</title>
+    <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.js"></script>
+    <script type="module" src="./index.js"></script>
+    <style>
+        #loading-status {
+            clip: rect(0 0 0 0); 
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap; 
+            width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <main v-bind:aria-busy="loading" v-bind:aria-describedby="loading ? 'loading-status' : null">
+        <p
+            id="loading-status"
+            aria-live="polite"
+            v-html="loading ? 'Loading weather data' : 'Weather data loading complete'"
+        ></p>
+
+        <section v-if="!loading">
+            <h1>Local weather</h1>
+            The weather...{{ weather.description }}!
+        </section>
+    </main>
+</body>
+
+</html>

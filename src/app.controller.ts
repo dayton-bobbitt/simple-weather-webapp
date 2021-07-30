@@ -1,12 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
 import { WeatherService } from './weather/weather.service';
 
-@Controller()
+@Controller('/api')
 export class AppController {
   constructor(private readonly weatherService: WeatherService) {}
 
-  @Get()
-  getWeather(): string {
+  @Get('/weather')
+  public getWeather(): Weather {
     return this.weatherService.getWeather();
   }
 }
