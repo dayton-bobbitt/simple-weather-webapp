@@ -2,46 +2,17 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { AxiosResponse } from 'axios';
 
-//#region Private interfaces
-
-interface AccuWeatherLocationResponse {
-  Key: string;
-  AdministrativeArea: {
-    LocalizedName: string;
-  };
-  ParentCity: {
-    LocalizedName: string;
-  };
-};
-
-interface AccuWeatherCurrentConditions {
-  Temperature: {
-    Imperial: {
-      Value: number;
-      Unit: string;
-    };
-  };
-  RealFeelTemperature: {
-    Imperial: {
-      Value: number;
-      Unit: string;
-    };
-  };
-};
-
-type AccuWeatherCurrentConditionsResponse = [AccuWeatherCurrentConditions];
-
-//#endregion
-
 @Injectable()
 export class WeatherService {
   constructor(private readonly httpService: HttpService) { }
 
   async getWeather(ip: string): Promise<Weather> {
     const locationResponse = await this.getLocationFromIp(process.env.NODE_ENV === 'production' ? ip : process.env.DEVELOPMENT_IP_ADDR);
-    const currentConditionsRes = await this.getForecastForLocation(locationResponse.Key);
+    const currentConditionsResponse = await this.getForecastForLocation(locationResponse.Key);
+
     return {
-      description: `It's ${currentConditionsRes.Temperature.Imperial.Value}°${currentConditionsRes.Temperature.Imperial.Unit} in ${locationResponse.ParentCity.LocalizedName}, ${locationResponse.AdministrativeArea.LocalizedName}. Feels like ${currentConditionsRes.RealFeelTemperature.Imperial.Value}°${currentConditionsRes.RealFeelTemperature.Imperial.Unit}.`,
+      Location: locationResponse,
+      CurrentConditions: currentConditionsResponse,
     };
   }
 

@@ -4,33 +4,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Weather Webapp</title>
+    <title>Simple Weather</title>
     <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.js"></script>
     <script type="module" src="./index.js"></script>
-    <style>
-        #loading-status {
-            clip: rect(0 0 0 0); 
-            clip-path: inset(50%);
-            height: 1px;
-            overflow: hidden;
-            position: absolute;
-            white-space: nowrap; 
-            width: 1px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
 </head>
 
 <body>
-    <main v-bind:aria-busy="loading" v-bind:aria-describedby="loading ? 'loading-status' : null">
-        <p
-            id="loading-status"
-            aria-live="polite"
-            v-html="loading ? 'Loading weather data' : 'Weather data loading complete'"
-        ></p>
+    <main v-bind:aria-busy="loading ? true : null">
+        <p aria-live="polite" role="status" class="sro"
+            v-html="loading ? 'Loading local weather data' : 'Loading local weather data complete'">
+        </p>
 
-        <section v-if="!loading">
-            <h1>Local weather</h1>
-            {{ weather.description }}
+        <section v-if="!loading" class="weather">
+            <div aria-hidden="true" class="weather__approximate-location">
+                <svg class="approximate-location__icon" role="presentation" alt="Location marker icon">
+                    <use xlink:href="./assets/images/location-marker.svg#location-marker"></use>
+                </svg>
+                <span class="approximate-location__text">Approximate location</span>
+            </div>
+
+            <!-- <h1 class="weather__location" aria-describedby="approximate-location">{{ location }}</h1> -->
+
+            <dl v-bind:aria-label="`Current conditions for ${location}`" class="weather__current-conditions">
+                <div>
+                    <dt class="sro">Approximate location</dt>
+                    <dd><span class="weather__location">{{ location }}</span></dd>
+                </div>
+                <div>
+                    <dt class="sro">Description</dt>
+                    <dd>
+                        <img class="weather__illustration" role="presentation" alt="Current weather illustration" v-bind:src="`./assets/images/weather-illustration__${weatherIllustrationName}.svg`">
+                        <span class="current-conditions_description">{{ currentTemperature.description }}</span>
+                    </dd>
+                </div>
+                <div>
+                    <dt class="sro">Temperature</dt>
+                    <dd>
+                        <span class="current-conditions_temperature-value">{{ currentTemperature.value }}</span>
+                        <sup>&deg;{{ currentTemperature.unit }}</sup>
+                    </dd>
+                </div>
+            </dl>
         </section>
     </main>
 </body>

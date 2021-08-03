@@ -1,0 +1,9 @@
+<svg id="weather-illustration__sunny" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="80" cy="80" r="80" fill="url(#paint0_radial)"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(132.821 139.487) rotate(-128.428) scale(158.418 272.805)">
+<stop offset="0.167691" stop-color="#FF51A7"/>
+<stop offset="0.954981" stop-color="#FFBC7A"/>
+</radialGradient>
+</defs>
+</svg>

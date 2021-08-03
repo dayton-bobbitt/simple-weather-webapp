@@ -1,0 +1,24 @@
+<svg id="weather-illustration__partly-cloudy" viewBox="0 0 178 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="98" cy="80" r="80" fill="url(#paint0_radial)"/>
+<path d="M82.536 95H59.5423C51.229 95 52.4037 79.9779 62.1541 81.7856C63.0351 72.9344 79.3134 69.0024 81.7522 84.4529C88.1103 83.6203 89.0684 95 82.536 95Z" fill="url(#paint1_radial)" fill-opacity="0.6"/>
+<path d="M75.2314 153H14.6115C-7.30548 153 -4.20849 111.511 21.4971 116.503C23.8199 92.057 66.7354 81.1972 73.1648 123.87C89.9271 121.57 92.4529 153 75.2314 153Z" fill="url(#paint2_radial)"/>
+<path d="M139.236 135H104.397C91.8014 135 93.5813 112.825 108.355 115.493C109.69 102.427 134.354 96.6226 138.049 119.43C147.682 118.201 149.134 135 139.236 135Z" fill="url(#paint3_radial)" fill-opacity="0.9"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150.821 139.487) rotate(-128.428) scale(158.418 272.805)">
+<stop offset="0.167691" stop-color="#FF51A7"/>
+<stop offset="0.954981" stop-color="#FFBC7A"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(63.0821 80.1046) rotate(76.202) scale(15.338 29.5693)">
+<stop stop-color="#5B6EB5" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#5E3F70" stop-opacity="0.98"/>
+</radialGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.9438 111.86) rotate(75.3217) scale(46.6783 86.3346)">
+<stop offset="0.11104" stop-color="#B0B9D9"/>
+<stop offset="0.929451" stop-color="#7E668C"/>
+</radialGradient>
+<radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(109.761 113.012) rotate(75.8523) scale(22.6762 44.734)">
+<stop stop-color="#98A6D9"/>
+<stop offset="1" stop-color="#7E668C"/>
+</radialGradient>
+</defs>
+</svg>

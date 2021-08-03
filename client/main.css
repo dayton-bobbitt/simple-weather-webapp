@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    /* Color */
+    --color-text-primary: #1F2D61;
+    --color-text-secondary: #8C9B9F;
+
+    /* Space */
+    --space-stack-one-x: 1rem 0 0 0;
+    --space-stack-three-quarter-x: 0.75rem 0 0 0;
+    --space-stack-half-x: 0.5rem 0 0 0;
+    --space-stack-quarter-x: 0.25rem 0 0 0;
+
+    --space-inline-one-x: 0 0 0 1rem;
+    --space-inline-three-quarter-x: 0 0 0 0.75rem;
+    --space-inline-half-x: 0 0 0 0.5rem;
+    --space-inline-quarter-x: 0 0 0 0.25rem;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.weather__approximate-location {
+    display: flex;
+    color: var(--color-text-secondary);
+}
+
+.weather__approximate-location .approximate-location__icon {
+    flex: 0 0 auto;
+    width: 1rem;
+    height: 1rem;
+}
+
+.weather__approximate-location .approximate-location__text {
+    flex: 1 1 auto;
+    display: inline-block;
+    margin: var(--space-inline-quarter-x);
+    font-weight: 500;
+}
+
+.weather__location {
+    display: inline-block;
+    color: var(--color-text-primary);
+    margin: var(--space-stack-three-quarter-x);
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.weather__illustration {
+    margin: var(--space-stack-one-x);
+    max-height: 10rem;
+}
+
+.weather__current-conditions {
+    text-align: center;
+}
+
+.sro {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

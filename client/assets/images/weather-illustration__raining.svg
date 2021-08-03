@@ -1,0 +1,27 @@
+<svg id="weather-illustration__raining" viewBox="0 0 183 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.6713 40.4182H37.4554C27.254 40.4182 28.6956 22.1231 40.6604 24.3246C41.7415 13.5449 61.7168 8.7562 64.7094 27.5731C72.5115 26.559 73.6872 40.4182 65.6713 40.4182Z" fill="url(#paint0_radial)" fill-opacity="0.5"/>
+<path d="M161.492 98H50.7038C10.6486 98 16.3086 27.8971 63.2878 36.3328C67.5329 -4.97268 145.965 -23.3219 157.715 48.7803C188.35 44.8945 192.966 98 161.492 98Z" fill="url(#paint1_radial)" fill-opacity="0.95"/>
+<path d="M72.9558 113.272H14.1695C-7.08451 113.272 -4.08119 73.0378 20.8468 77.8794C23.0994 54.1727 64.7168 43.6415 70.9517 85.0234C87.207 82.7933 89.6564 113.272 72.9558 113.272Z" fill="url(#paint2_radial)"/>
+<path d="M159.29 93.7427H121.732C108.153 93.7427 110.072 68.5962 125.998 71.6221C127.437 56.8055 154.026 50.2234 158.01 76.0872C168.395 74.6933 169.96 93.7427 159.29 93.7427Z" fill="url(#paint3_radial)"/>
+<rect width="9.14478" height="38.0787" rx="4.57239" transform="matrix(0.964089 0.26558 -0.43339 0.901207 63.2045 123.141)" fill="#8A9EE6"/>
+<rect width="9.14478" height="52.2287" rx="4.57239" transform="matrix(0.964089 0.26558 -0.43339 0.901207 99.4202 110.502)" fill="#8A9EE6"/>
+<rect width="9.14478" height="50.6724" rx="4.57239" transform="matrix(0.964089 0.26558 -0.43339 0.901207 124.212 111.905)" fill="#8A9EE6"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.7992 22.2773) rotate(76.1015) scale(18.688 36.2691)">
+<stop stop-color="#5B6EB5" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#5E3F70" stop-opacity="0.98"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(67.7594 28.488) rotate(75.7719) scale(71.7115 142.204)">
+<stop stop-color="#7583B5" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#5E3F70" stop-opacity="0.98"/>
+</radialGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.2196 73.377) rotate(76.8068) scale(40.9767 75.7892)">
+<stop offset="0.0369039" stop-color="#B0B9D9"/>
+<stop offset="0.929451" stop-color="#7E668C"/>
+</radialGradient>
+<radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(127.514 68.8082) rotate(76.5242) scale(25.6404 48.3643)">
+<stop stop-color="#A3AED9"/>
+<stop offset="0.929451" stop-color="#7E668C"/>
+</radialGradient>
+</defs>
+</svg>

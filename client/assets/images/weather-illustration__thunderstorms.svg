@@ -1,0 +1,29 @@
+<svg id="weather-illustration__thunderstorms" viewBox="0 0 184 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M120 106H92.6364L79.6061 137.696H86.7727L77 160L106.318 131.239H99.803L120 106Z" fill="url(#paint0_linear)" stroke="#FFC24C"/>
+<path d="M65.6738 40.4198H37.4568C27.255 40.4198 28.6966 22.124 40.6618 24.3256C41.7431 13.5455 61.7191 8.75658 64.7118 27.5742C72.5142 26.5601 73.6899 40.4198 65.6738 40.4198Z" fill="url(#paint1_radial)" fill-opacity="0.5"/>
+<path d="M161.498 98.0038H50.7058C10.6491 98.0038 16.3093 27.8982 63.2903 36.3342C67.5356 -4.97287 145.97 -23.3229 157.721 48.7822C188.357 44.8963 192.973 98.0038 161.498 98.0038Z" fill="url(#paint2_radial)" fill-opacity="0.95"/>
+<path d="M72.9586 113.277H14.1701C-7.08478 113.277 -4.08135 73.0407 20.8476 77.8824C23.1003 54.1748 64.7193 43.6431 70.9544 85.0267C87.2104 82.7965 89.6599 113.277 72.9586 113.277Z" fill="url(#paint3_radial)"/>
+<path d="M159.296 93.7464H121.737C108.157 93.7464 110.076 68.5989 126.003 71.625C127.442 56.8077 154.032 50.2254 158.016 76.0902C168.401 74.6963 169.966 93.7464 159.296 93.7464Z" fill="url(#paint4_radial)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="69" y1="52" x2="94" y2="140" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD27A" stop-opacity="0"/>
+<stop offset="1" stop-color="#FFD27A"/>
+</linearGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41.8007 22.2782) rotate(76.1015) scale(18.6887 36.2705)">
+<stop stop-color="#5B6EB5" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#5E3F70" stop-opacity="0.98"/>
+</radialGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(67.7621 28.4892) rotate(75.7719) scale(71.7143 142.209)">
+<stop stop-color="#7583B5" stop-opacity="0.98"/>
+<stop offset="1" stop-color="#5E3F70" stop-opacity="0.98"/>
+</radialGradient>
+<radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.2205 73.3798) rotate(76.8068) scale(40.9783 75.7922)">
+<stop offset="0.0369039" stop-color="#B0B9D9"/>
+<stop offset="0.929451" stop-color="#7E668C"/>
+</radialGradient>
+<radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(127.519 68.8109) rotate(76.5242) scale(25.6414 48.3662)">
+<stop stop-color="#A3AED9"/>
+<stop offset="0.929451" stop-color="#7E668C"/>
+</radialGradient>
+</defs>
+</svg>
