@@ -37,7 +37,7 @@
                 <div>
                     <dt class="sro">Description</dt>
                     <dd>
-                        <img class="weather__illustration" role="presentation" alt="Current weather illustration" v-bind:src="`./assets/images/weather-illustration__${weatherIllustrationName}.svg`">
+                        <img v-if="!!weatherIllustrationName" class="weather__illustration" role="presentation" alt="Current weather illustration" v-bind:src="`./assets/images/weather-illustration__${weatherIllustrationName}.svg`">
                         <span class="current-conditions_description">{{ currentTemperature.description }}</span>
                     </dd>
                 </div>
